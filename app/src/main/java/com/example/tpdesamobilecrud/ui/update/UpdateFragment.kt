@@ -30,7 +30,7 @@ class UpdateFragment : Fragment(), MenuProvider {
     ): View? {
         binding = FragmentUpdateBinding.inflate(inflater, container, false)
 
-        client = arguments?.getSerializable("client") as Cliente // Bundle
+        client = arguments?.getSerializable("cliente") as Cliente // Bundle
 
         binding.inputNombre.setText(client?.let { it.name })
         binding.inputCelular.setText(client!!.phone)

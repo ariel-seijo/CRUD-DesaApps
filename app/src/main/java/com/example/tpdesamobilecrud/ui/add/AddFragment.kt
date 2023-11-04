@@ -26,7 +26,6 @@ class AddFragment : Fragment() {
     ): View? {
         binding = FragmentAddBinding.inflate(inflater, container, false)
 
-
         binding.btnAddCliente.setOnClickListener {
             val name = binding.inputNombre.text.toString()
             val phone = binding.inputCelular.text.toString()
